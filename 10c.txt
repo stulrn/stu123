@@ -1,0 +1,36 @@
+Web browser working:
+
+A web browser or frequently called as browser is an application software that is installed on a computer to provide access to the World Wide Web. It fetches the web pages from the server along with the necessary files like, images, flashes, videos etc, interprets them and then displays it on the screen.
+
+All you have to do is simply type the URL (Uniform Resource Locator) of a webpage in the address bar and the browser will bring the web page on your screen.
+
+Architecture of a Browser:
+
+The browser’s main functionality is to fetch the files from the server and to display them on the screen. It basically displays html files containing images, PDF, videos, flashes, etc in an ordered layout.
+
+A browser is a group of structured codes that performs plenty of tasks to display a webpage on the screen. These codes are separated in to different components according to their tasks performed. The structure of a browser is shown in the below image.
+1.      User Interface – It is the space where interaction between users and the browser occurs. Most of the browsers have common inputs for user interface. Some of them are - an address bar, next and back buttons, buttons for home, refresh and stop, options to bookmark web pages, etc.
+2.      Browser Engine – It is the piece of code that communicates the inputs of user interface with the rendering engine. It is responsible for querying and manipulating the rendering engine according to the inputs from various user interfaces.
+3.      Rendering Engine – It is the part thoroughly responsible for displaying the requested content on the screen. It first parses the html tags and then using the styles, it builds a render tree and finally a render layout, which displays the content on the screen.
+4.      Networking – The fraction of the code written in the browser, responsible to send various network calls. For example sending the http requests to the server.
+5.      Java Script Interpreter – It is the component of the browser written to interpret the java script code presented in a web page.
+6.      UI Backend – This draws basic widgets on the browser like combo boxes, windows, etc.
+7.      Data Storage – It is small database created on the local drive of the computer where the browser is installed. This database stores various files like cache, cookies, etc.
+ 
+How Browsers work?
+World Wide Web works on the client-server model. A user computer works as a client which can receive and send data to the server. When a web page is requested by a user, the browser contacts the requested server (where the website is stored) and by fetching and interpreting the requested files, it displays the web page on the computer screen.
+Although working of the browser is not as simple as it seems, since a plenty of internal tasks are performed before a webpage appears on the screen. The whole process takes place in these three steps:
+1.      Contact to DNS Server - When a user enters a URL into the address bar and hits ‘enter’, at first browser contacts the DNS server. A DNS server stores the IP addresses of the server associated with the corresponding domain names. The DNS server takes the domain name from the browser and returns the corresponding IP address to the browser.
+2.      Contact to Server – After getting the IP address of the server for the requested webpage, browser sends a request to that server for the desired files. For example consider the following URL: http://www.engineersgarage.com/articles
+This URL is divided into three parts. First one is HTTP – it is a protocol named Hyper Text Transfer Protocol which defines the way browser communicates with the server. The second part is www.engineersgarage.com which is translated by the DNS server with the IP address. It is the address of a computer (Web Server) where the requested web page is stored. The third part is ‘articles’ which tells the address of the file that is located in the root folder of the website.
+a.       Loading HTML – As soon as the web page is found by the browser, it is loaded in to the browser using the http protocol. All the html tags as well as other resources (like images, flash files, pdf, etc.) referred in the html tags are loaded separately.
+
+b.      Parsing – An HTML Parser starts interpreting the html files and building subsequent content tree.
+
+c.       Apply Styles – Web pages may have style sheets attached and a web browser also has its default styles. Using a CSS parser, they are interpreted in order to define the styles (like height, width, spacing, border, color, margin, etc.) for the content specified in the html.
+
+d.      Construct Frames – Using the HTML and style sheets, the browser constructs the frames. A frame is a rectangular block with various properties like width, height, color, spacing, etc.
+
+e.       Frames Layout– This process includes arranging all the frames in order to make a layout of the web page. The visual display for layout process of Google.com is shown in this video:
+
+f.       Frames Painting– As soon as the layouts are constructed the next process is painting. Painting is the term used for the process to exactly render the objects on the screen and after that, the webpage is displayed on the computer screen. A browser executes all the processes in a flash of a second 

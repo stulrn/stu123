@@ -1,0 +1,34 @@
+Aim: Acquisition of cell phone and mobile devices.
+1. To get information from an Android device is easy.
+
+2. Go on menu Settings>>About Phone>>Software and Hardware information
+
+3. You will get the information like firmware version, baseband version, 
+and kernel version, build number, software number, browser version etc.
+In this case, we use a Host Windows and Android Software Development Kit.
+ The Android Software Development Kit (SDK) helps developers build, test,
+ and debug applications to run on Android. It includes software libraries, APIs,
+ emulator, reference material, and many other tools. These tools not only help create Android applications
+ but also provide documentation and utilities that help significantly in forensic analysis of Android devices.
+Having sound knowledge of the Android SDK can help you understand the particulars of a device. This, in turn, 
+will help you during an investigation. During forensic examination, the SDK helps us connect the device and
+ access the data present on the device.
+
+The method to get the serial number of an Android device is the following:
+
+1. Step one: Download from web site the SDK package:
+https://developer.android.com/sdk/download.html?v=archives/android-sdk-windows-
+1.6_rl.zip
+
+2. Step two: Create a folder called ANDROIDSDK and unzip the zip file you downloaded.
+
+3. Step three: Connect your Android device via USB cable.
+
+4. Step four: In the command prompt Windows, browse on the ANDROIDSDK folder tools and we run adb device command.
+
+5. Step five: If all work properly, a list of linked devices will appear with a serial number, if not present on devices list, check that the proper work of the drive and USB debugging enabled.
+
+C:\cd androidsdk
+C:\androidsdk>cd tools
+C:\androidsdk>tools adb devices
+It will display the list of devices attached.
