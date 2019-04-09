@@ -1,0 +1,26 @@
+Aim: Understanding, Reading and Analyzing Routing Table of a network.
+Solution:
+Routers examine the destination IP address of a received packet and make routing decisions accordingly. 
+To determine out which interface the packet will be sent, routers use routing tables. 
+A routing table lists all networks for which routes are known. Each router’s routing table is unique and stored in the RAM of the device.
+When a router receives a packet that needs to be forwarded to a host on another network, 
+it examines its destination IP address and looks for the routing information stored in the routing table. 
+Each entry in the routing table consists of the following entries:
+•	The network and the subnet mask – specifies a range of IP addresses.
+•	The remote router – the IP address of the router used to reach that network.
+•	The outgoing interface – the outgoing interface the packet should go out to reach the destination network.
+In the example above we have a network of two computers and a router. Host a wants to communicate with Host B. 
+Because hosts are on different subnets, Host A sends its packet to the default gateway (the router). The router receives the packet, 
+examines the destination IP address, and looks up into its routing table to figure out which interface the packet will be sent out. 
+The show ip route command can be used•	C – Stands for connected. Each directly connected network is automatically 
+added to the routing table.
+•	10.0.0.0/8 – indicates the range of the IP addresses for which the route will be used, in this case, 
+all IP addresses from the following range: 10.0.0.0 – 10.255.255.255.
+•	FastEthernet0/1 – indicates the interface the packet will be sent out, in order to reach the destination network.
+There methods are used to populate a routing table:
+•	directly connected networks are added automatically
+•	using static routing
+•	using dynamic routing
+Note that the routing tables are not specific for Cisco devices. 
+Even your Windows operating system has a routing table that can be displayed using the route print command:
+ to show the routing table of the router:
